@@ -39,4 +39,15 @@ abstract class StaffMember {
     public static int getStaffCount(){
       return staffCount;
     }
+
+    public void changeDepartment(String newDepartment){
+      if(newDepartment != null && !newDepartment.isEmpty()){
+          department = newDepartment;
+       }
+    }
+
+    public final void showCommonNotice(){
+         System.out.println("Follow rules");
+    }
+
 }
