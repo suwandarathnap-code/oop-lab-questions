@@ -1,13 +1,13 @@
 public class Lab04Main {
     public static void main(String[] args) {
 
-        UniversityPolicy.showPolicyHeader();
-        System.out.println(UniversityPolicy.UNIVERSITY_NAME);
+        StaffMember.showSystemName();
 
-        Lecturer l = new Lecturer("Roshan",101,"IT",3,50000);
-        LabAssistant a = new LabAssistant("Sandun",201,"IT",100,500);
-
-        System.out.println(UniversityPolicy.calculateBonus(l.calculateMonthlyPayment()));
+        Lecturer l1 = new Lecturer("A",1,"IT",2,1000);
+        Lecturer l2 = new Lecturer("B",2,"IT",2,1000);
+        LabAssistant a = new LabAssistant("C",3,"IT",50,100);
+        
+        System.out.println(StaffMember.getStaffCount());
         
     }
 }
